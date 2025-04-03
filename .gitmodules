@@ -16,3 +16,6 @@
 [submodule "packages/nomad-simulations"]
 	path = packages/nomad-simulations
 	url = https://github.com/nomad-coe/nomad-simulations.git
+[submodule "packages/nomad-aa-plugin-rf"]
+	path = packages/nomad-aa-plugin-rf
+	url = https://github.com/Rosforl21/nomad-aa-plugin-rf.git
