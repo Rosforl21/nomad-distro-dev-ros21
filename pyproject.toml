@@ -26,7 +26,6 @@ dependencies = [
   "nomad-measurements",
   "nomad-analysis",
   "fabrication-facilities",
-  "nomad-aa-plugin",
 ]
 
 [tool.uv.workspace]
@@ -44,7 +43,6 @@ nomad-analysis = { workspace = true }
 nomad-simulations = { workspace = true }
 nomad-plugin-test1 = { workspace = true }
 fabrication-facilities = { workspace = true }
-nomad-aa-plugin = { workspace = true }
 
 [tool.uv]
 extra-index-url = [
@@ -61,6 +59,8 @@ required-version = ">=0.5.14"
 submodule = "git submodule update --init --recursive"
 docker = "docker compose up -d"
 start = "nomad admin run appworker --dev"
+start_app = "nomad admin run app"
+start_worker = "nomad admin run worker"
 setup = ["gui-env", "gui-setup", "docker", "config"]
 lint = ["ruff-lint", "ruff-format"]
 
